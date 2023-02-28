@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.background {
+    background-image: url("C:/Users/garak/Downloads/cloud-computing-banner-background-smart-city.jpg");
+    background-size: cover;
+    /* height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+   
+  
+   
+
+}
+.background-2{
+    /* background-image: linear-gradient(#bfbfbf,#6e2674); */
+    background-image: linear-gradient(rgba(191,191,191,0.7),rgba(110, 38, 116,0.7));
+    /* background-color: rgba(127, 193, 66,0.7); */
+    
+     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .background {
+        background-image: url("C:/Users/garak/Downloads/cloud-computing-banner-background-smart-city.jpg");
+       
+    }
+}
+
+/* .heading {
+    font-family: verdana;
+    color: #ffffff;
+    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.8);
+    
+}
+
+@media screen and (min-width:768px) {
+    .heading {
+        text-shadow: 2px 4px 4px #2f2c36;
+    }
+}
+
+.heading2 {
+    font-family: verdana;
+    margin-top: 2px;
+    color: #ffffff;
+    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.8);
+}
+
+@media screen and (min-width:768px) {
+    .heading2 {
+        text-shadow: 2px 4px 4px #2f2c36;
+    }
+} */
+
+.login-page {
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: 0px 2px 3px 0px;
+    background-color:transparent;
+    /* background-color: rgba(127, 193, 66,0.4); */
+    /* background-color: #ffffff; */
+    /* background-image: linear-gradient(to right, #bfbfbf,#6e2674); */
+    /* opacity: 0.9; */
+    /* background-image: linear-gradient(#bfbfbf,skyblue); */
+   
+    
+  
+    
+
+}
+.logo-div{
+    text-align: center;
+    margin-right: 50px;
+}
+.login-logo{
+    width:200px;
+   
+}
+svg{
+    color:#fffefe;
+}
+
+@media screen and (max-width:767px) {
+    .login-page {
+        width: 80%;
+        padding-left: 40px;
+    }
+}
+
+.email-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding:5px;
+    
+   
+}
+.email{
+    padding:6px;
+    margin-left:1px;
+   outline: none;
+   width:70%;
+    /* background-color: #bfbfbf;  */
+   /* color:#272a38;*/
+   /* background-color: #2f2c36; */
+    border:none;
+   
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    height:28px;
+    background-color: #927395;
+    color:#ffffff;
+    /* background-color: transparent; */
+   /* border: 1px solid pink; */
+    
+}
+.email::-webkit-input-placeholder{
+    /* color:#343434; */
+    color:#ffffff;
+}
+
+.user{
+    height:28px;
+    width:25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:6px;
+    /* background-color: #bfbfbf; */
+    /* background-color: #2f2c36; */
+    /* background-color: #927395; */
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    background-color: #927395;
+    /* border: 1px solid #927395; */
+    color:#ffffff;
+    border-right: 1px solid;
+   
+}
+
+.password-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+.remember{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight:bold;
+    
+}
+label:hover{
+    color:#000000;
+}
+label{
+    font-size: 10px;
+    font-family: roboto;
+    /* color:#272a36; */
+    /* color:#ffffff; */
+    font-weight: 600;
+    color:#ffffff;
+    
+}
+.login-btn{
+    margin: 10px;
+    text-align: right;
+    width:80%;
+     
+    
+    
+}
+.login{
+    width:120px;
+    height:38px;
+    /* background-color: #3488ef; */
+    /* background-color: #bfbfbf; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    color:#ffffff;
+    font-family: roboto;
+    font-weight: 600;
+    border-radius:10px;
+    color:#ffffff;
+    background-color: transparent; 
+    border: 1px solid #ffffff;
+    /* background-image: linear-gradient(#6e2674,#bfbfbf); */
+   
+    
+}
+.login:hover{
+    background-color: #927395;
+   
+}
+.login:active{
+    border: none;
+}
+.forgot-password-text{
+    margin-top:0px;
+    font-size: 10px;
+    font-family:roboto;
+    color:tomato;
+    font-weight: bold;
+    text-align: end;
+    margin-right: 82px;
+   
+}
+.anchor{
+    color:#ffffff;
+    text-decoration:none;
+   
+   
+}
+.anchor:hover{
+     color:tomato;
+    
+}
+.anchor:active{
+    color:green;
+}
+.sign-up{
+    text-align:left;
+    font-weight: 600;
+    font-family: roboto;
+    color: #fffefe;
+    
+}
+.new-account{
+   
+    font-family: roboto;
+    font-size: 13px;
+}
+.new-account:link{
+    color:blue;
+    text-decoration: none;
+}
+.new-account:visited{
+    color:#ffffff;
+    
+    text-decoration: none;
+   
+}
+
+.new-account:hover{
+   
+    text-decoration: underline;
+    color:tomato;
+    
+}
+.name{
+    color:#3488ef;
+    text-shadow: 0px 16px 10px 0px #ffffff;
+    text-align: center;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height:55px;
+    border-radius: 0px 40px 40px 40px;
+    background-image: linear-gradient(#343434,#6e2674);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.span{
+    font-size: 16px;
+    /* background-image: linear-gradient(#343434,#6e2674);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    margin-top: 0px;
+    color:#ffffff;
+}
+#mailErr{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 12px;
+}
+#passwordErr{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 12px;
+}
+.login-error{
+    color:red;
+    font-size: 11px;
+    font-family: roboto;
+    margin-left: 12px;
+}
+#login-link{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+

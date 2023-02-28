@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Login.css">
+    <title>Login form</title>
+    <link rel="icon" type="image/x-icon" href="https://selfcare.mynuron.co.in/synnefoclient/themes/synnefo/img/loginpagelogo.png">
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="background-2">
+        <form class="login-page" id="logInForm">
+            <div class="logo-div">            
+                <img class="login-logo" src="https://selfcare.mynuron.co.in/synnefoclient/themes/synnefo/img/loginpagelogo.png"/>
+            </div>
+
+               
+            <p id="usernamePassword"></p>
+            <div class="email-card">
+                <div class="user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    </svg>
+                </div>
+                <input class="email" placeholder="Enter Username" type="text" id="username"/>
+            </div>
+            <p id ="mailErr"></p>
+            
+
+            <div class="email-card">
+                <div class="user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                    </svg>
+                </div>
+                <input class="email" placeholder="Enter Password" type="password" id="userPassword"/>
+               
+                
+
+            </div>
+            <p id ="passwordErr"></p>
+            <p class="forgot-password-text"><a href="" class="anchor">Forgot Password?
+            </a></p>
+            <div class="remember">
+                <input type="checkbox" id="check"/>
+                <label for="check">Remember Me</label>
+            </div>
+            <div class="login-btn">
+                <p class="sign-up">
+                    Don't have Account? <a href="" class="new-account">Sign Up</a>
+                </p>
+                <button type="submit" class="login">Login</button><br>
+               
+            </div>
+           <p id="res"></p>
+
+
+        </form>
+    </div>
+    </div>
+    <script type="text/javascript" src="Logo.js"></script>
+    
+</body>
+
+</html>

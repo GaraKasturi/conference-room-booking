@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>Reservation Form</title>
+        <!-- <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dqcd0lwea/image/upload/v1675940684/Screenshot_118_ghwurq.png">
+        <link rel="stylesheet" href="Form.css"> -->
+       
+
+        <script type="text/javascript"
+             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("0MMZvhoP-c5k56a3j");
+            })();
+        </script>
+        <style>
+            span{
+                color:red;
+            }
+           
+           
+        </style>
+    </head>
+
+    <body class="body">
+        <form class="form"  id="reservationForm">
+            <h1 class="name">MR<sub class="span">Meetings</sub></h1>
+            <h1 class="reserve-heading">Reserve A Meeting Room</h1>
+            <p class="reserve-para">Please complete the form below to reserve a room</p>
+            <hr/>
+            <div class="form-container">
+            
+                <label class="label" for="name">First Name<span> *</span></label>
+                <br>
+                <input type="text" class="name-input" id="name"/>
+                <br>
+                <label class="label" for="lastName">Last Name<span> *</span></label>
+                <br>
+                <input type="text" class="name-input" id="lastName"/>
+                <br>
+                <label class="label" for="email">Email ID<span> *</span></label>
+                <br>
+                <input type="text" class="name-input" id="email"/>
+                <br>
+                <label class="label" for="staffId">Staff ID<span> *</span></label>
+                <br>
+                <input type="text" class="name-input" id="staffId"/>
+                <br>
+                <label class="label" for="department">Department<span> *</span></label>
+                <br>
+                <input type="text" class="name-input" id="department"/>
+                <br>
+                <label class="label"  for="date">Date<span > *</span></label>
+                <br>
+                <input type="Date" class="name-input" id="date"/>
+                <br>
+                <label class="label" for="from">Start Time<span> *</span></label>
+                <br>
+                <input type="time" class="name-input" id="from"/>
+                <br>
+                <label class="label" for="to">End Time<span > *</span></label>
+                <br>
+                <input type="time" class="name-input" id="to"/>
+                <p class="label">Choose a Room</p>
+                <input type="radio" name="room" id="101"/>
+                <label class="label" for="101">Room 1</label>
+                <br>
+                <input type="radio" name="room" id="102"/>
+                <label class="label" for="102">Room 2</label>
+                <br>
+                <input type="radio" name="room" id="103"/>
+                <label class="label" for="103">Room 3</label>
+                <br>
+                <input type="radio" name="room" id="104"/>
+                <label class="label" for="104">Room 4</label>
+                <br> 
+                <p class="description-agenda"><label class="label" for="textArea">Brief Description of Meeting Agenda (optional)</label>
+                </p>
+                    <textarea  id="textArea"></textarea>
+                <p id="error"></p>
+                <div class="button-container">
+                    <button type="submit" class="reserve-room-button" >
+                        Reserve Room
+                    </button>
+
+                    
+                </div>
+               
+                
+            </div>
+        </form>
+
+        <div class="final-card display-property" id="final">
+               <div class="final-div">
+                   <h1 id="final-heading"></h1>
+                   <h2>Your conference room is booked.</h2>
+                   <button id="done" onclick="done()">Done</button>
+               </div>
+        </div>
+        <script src="Form.js" type ="text/javascript"></script>
+        
+    </body>
+</html>
